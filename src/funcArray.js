@@ -1,6 +1,17 @@
 /* Encuentra el máximo */
+export function maxOfTwoNumbers(num1, num2) {
+    if (num1>num2) {
+        return num1;
+    }
+    if (num1<num2) {
+        return num2;
+    } 
+    if (num1==num2){
+        return num1;
+    }
+    }
 
-export function maxOfTwoNumbers(){}
+
 export function findLongestWord(){}
 export function sumArray(){}
 export function averageNumbers(){}
