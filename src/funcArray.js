@@ -80,7 +80,13 @@ console.log(uniquifyArray(words3));
 
 
 
-export function doesWordExist(){} 
+export function doesWordExist(array, word){
+    return array.includes(word)} 
+
+let words4 = ['machine','subset','trouble','starting','matter','eating','truth','disobedience'];
+console.log(doesWordExist(words4, 'machine'));
+
+
 export function howManyTimes(){}
 export function greatestProduct(){}
 
