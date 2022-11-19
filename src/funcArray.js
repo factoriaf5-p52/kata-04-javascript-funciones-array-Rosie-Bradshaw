@@ -22,23 +22,41 @@ export function findLongestWord(array){
     })
     return longestWord;
 }
-words = ['mystery','brother','aviator','crocodile','pearl','orchard','crackpot'];
+let words = ['mystery','brother','aviator','crocodile','pearl','orchard','crackpot'];
 console.log(findLongestWord(words));
 
 
 
 
-export function sumArray(numbersArray){
+export function sumArray(array){
     //const numbers = [6, 12, 1, 18, 13, 16, 2, 1, 8, 10];
     let total = 0;
-    for (let number of numbersArray) {
+    for (let number of array) {
         total += number;
     }
     return total;
 }
+let numbers = [6, 12, 1, 18, 13, 16, 2, 1, 8, 10];
+console.log(sumArray(numbers));
 
-export function averageNumbers(){}
-export function averageWordLength(){}
+
+export function averageNumbers(array){
+    const total = array.reduce((accumulator, item) => accumulator + item);
+    return total/array.length;
+}
+let numbers2 = [2, 6, 9, 10, 7, 4, 1, 9];
+console.log(averageNumbers(numbers2));
+
+
+export function averageWordLength(array){
+    const totalWordLength = array.reduce((accumulator, item) => accumulator + item);
+    // averageWordLength = (totalWordLength/array.length).length;
+    return totalWordLength.length/array.length;
+}
+let words2= ['seat','correspond','linen','motif','hole','smell','smart','chaos','fuel','palace'];
+console.log(averageWordLength(words2))
+
+
 export function uniquifyArray(){}
 export function doesWordExist(){} 
 export function howManyTimes(){}
