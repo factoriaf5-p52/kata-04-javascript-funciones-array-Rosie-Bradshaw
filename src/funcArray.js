@@ -57,7 +57,29 @@ let words2= ['seat','correspond','linen','motif','hole','smell','smart','chaos',
 console.log(averageWordLength(words2))
 
 
-export function uniquifyArray(){}
+// export function uniquifyArray(array){
+//     let uniqueWords = array.filter((word, index) => {
+//         return array.indexOf(word)===index;
+//     });
+//     return uniqueWords;
+// }
+// let words3 = ['crab','poison','contagious','simple','bring','sharp','playground','poison','communion','simple','bring'];
+// console.log(uniquifyArray(words3));
+
+export function uniquifyArray(array){
+    let uniqueWords=[];
+    let i;
+    for (i=0; i<array.length; i++){
+        if(uniqueWords.indexOf(array[i])===-1){
+            uniqueWords.push(array[i]);
+        }}
+    return uniqueWords;   
+} 
+let words3 = ['crab','poison','contagious','simple','bring','sharp','playground','poison','communion','simple','bring'];
+console.log(uniquifyArray(words3));
+
+
+
 export function doesWordExist(){} 
 export function howManyTimes(){}
 export function greatestProduct(){}
