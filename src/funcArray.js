@@ -87,7 +87,21 @@ let words4 = ['machine','subset','trouble','starting','matter','eating','truth',
 console.log(doesWordExist(words4, 'machine'));
 
 
-export function howManyTimes(){}
+export function howManyTimes(array, word){
+    let n=0;
+    let numberOfRepeats;
+    for(numberOfRepeats of array) {
+        if (numberOfRepeats == word) {
+            n++;
+        }
+    }
+    return n;
+    };
+let words5 = ['machine','matter','subset','trouble','starting','matter','eating','matter','truth','disobedience','matter'];
+console.log(howManyTimes(words5, 'matter'));
+
+
+
 export function greatestProduct(){}
 
 
